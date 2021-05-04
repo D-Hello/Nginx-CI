@@ -1,3 +1,3 @@
 FROM nginx
-RUN apt-get update && apt-get upgrade
+RUN apt-get update -y && apt-get upgrade -y
 COPY induko/. /usr/share/nginx/html/
